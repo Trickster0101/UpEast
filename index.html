@@ -10,17 +10,20 @@
 	<link rel="stylesheet" type="text/css" href="css/basic.css" />
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/slideshow.js"></script>
 	
 </head>
 
-<body>
+<body onLoad="showSlides()">
 	<div class="row header-container">	
+		<!--
 		<div class="col-6 header" style="background: white;">
 			<img src="images/logo.jpg" />
 			<h1>Up East Security Agency</h1>
 		</div>
 		
 		<div class="col-6 header" style="background: white;">
+		
 			<ul>
 				<ul class="tab">
 				  <li><a id="home" class="tablinks">Home</a></li>
@@ -29,14 +32,48 @@
 				  <li><a id="contact_us" class="tablinks">Contact Us</a></li>
 				</ul>
 			</ul>
+		-->
 		</div>
 	</div>
 	
+	<!--
 	<div id="slideshow-container" class="row slideshow-container">
-		<div class="col-12 col-s-12 slideshow-carousel">
-			<img src="images/secu_1.jpg">
-		</div>
+		<div id="mySlides fade" class="image_1" style="background-image: url('images/secu_1.jpg');"></div>
+		<div id="mySlides fade" class="image_2" style="background-image: url('images/secu_3.png');"></div>
+		<div id="mySlides fade" class="image_3" style="background-image: url('images/secu_3.jpg');"></div>
 	</div>
+	-->
+	
+	<div class="slideshow-container">
+	  <div class="mySlides fade">
+		<div class="numbertext">1 / 3</div>
+		<img src="img1.jpg" style="width:100%">
+		<div class="text">Caption Text</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">2 / 3</div>
+		<img src="img2.jpg" style="width:100%">
+		<div class="text">Caption Two</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<div class="numbertext">3 / 3</div>
+		<img src="img3.jpg" style="width:100%">
+		<div class="text">Caption Three</div>
+	  </div>
+
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span> 
+	  <span class="dot" onclick="currentSlide(2)"></span> 
+	  <span class="dot" onclick="currentSlide(3)"></span> 
+	</div>
+
 	<div class="row">
 		<div class="col-12 heading">
 			<h1 style="margin-top: 5%;">OUR COMPANY</h1>
