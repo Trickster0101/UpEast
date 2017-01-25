@@ -9,8 +9,9 @@
 	<!-- Header Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/basic.css" />
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/slideshow.js"></script>
+	<script src="js/basic.js"></script>
 </head>
 
 <body onLoad="nextSlide()">
@@ -23,13 +24,14 @@
 		</div>
 
 		<div class="col-6 header" >
-			<ul>
-				<ul class="tab">
-				  <li><a id="home" class="tablinks">Home</a></li>
-				  <li><a id="services" class="tablinks">Services</a></li>
-				  <li><a id="business_profile" class="tablinks">Business Profile</a></li>
-				  <li><a id="contact_us" class="tablinks">Contact Us</a></li>
-				</ul>
+			<ul class="topnav" id="myTopnav">
+			  <li><a id="home" class="tablinks">Home</a></li>
+			  <li><a id="services" class="tablinks">Services</a></li>
+			  <li><a id="business_profile" class="tablinks">Business Profile</a></li>
+			  <li><a id="contact_us" class="tablinks">Contact Us</a></li>
+			  <li class="icon">
+			    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+			  </li>
 			</ul>
 		</div>
 	</div>
