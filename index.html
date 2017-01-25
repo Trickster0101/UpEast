@@ -5,22 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<title>UpEast Website</title>
-	
+
 	<!-- Header Style CSS -->
 	<link rel="stylesheet" type="text/css" href="css/basic.css" />
-	
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/slideshow.js"></script>
-	
 </head>
 
-<body onLoad="showSlides()">
-	<div class="row header-container">	
+<body onLoad="showSlides(slideIndex)">
+	<div class="row header-container">
 		<div class="col-6 header" >
+			<!--
 			<img src="images/logo.jpg" />
+		-->
 			<h1>Up East Security Agency</h1>
 		</div>
-		
+
 		<div class="col-6 header" >
 			<ul>
 				<ul class="tab">
@@ -32,36 +33,43 @@
 			</ul>
 		</div>
 	</div>
-	
+
 	<div id="slideshow-container" class="row slideshow-container">
 		<div class="slideshow-container">
-		  <div class="mySlides fade" style="background-image: url('images/secu_1.jpg'); ">
-			<div class="numbertext">1 / 3</div>
-			<div class="text">Caption Text</div>
+		  <div class="mySlides fade" style="background-image: url('images/secu_4.jpg'); ">
+				<div class="text">
+					<span class="dot" onclick="currentSlide(1)"></span>
+				  <span class="dot" onclick="currentSlide(2)"></span>
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				</div>
 		  </div>
 
-		  <div class="mySlides fade" style="background-image: url('images/secu_2.png');">
-			<div class="numbertext">2 / 3</div>
-			<div class="text">Caption Two</div>
+		  <div class="mySlides fade" style="background-image: url('images/secu_5.jpeg');">
+				<div class="text">
+					<span class="dot" onclick="currentSlide(1)"></span>
+				  <span class="dot" onclick="currentSlide(2)"></span>
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				</div>
 		  </div>
 
-		  <div class="mySlides fade" style="background-image: url('images/secu_3.jpg');">
-			<div class="numbertext">3 / 3</div>
-			<div class="text">Caption Three</div>
+		  <div class="mySlides fade" style="background-image: url('images/secu_6.jpg');">
+				<div class="text">
+					<span class="dot" onclick="currentSlide(1)"></span>
+				  <span class="dot" onclick="currentSlide(2)"></span>
+				  <span class="dot" onclick="currentSlide(3)"></span>
+				</div>
 		  </div>
 
-		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<div class="prev-next">
+		  	<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
 		</div>
+
 		<br>
 
-		<div style="text-align:center">
-		  <span class="dot" onclick="currentSlide(1)"></span> 
-		  <span class="dot" onclick="currentSlide(2)"></span> 
-		  <span class="dot" onclick="currentSlide(3)"></span> 
-		</div>
 	</div>
-	
+
 	<div class="row">
 		<div class="col-12 heading">
 			<h1 style="margin-top: 5%;">OUR COMPANY</h1>
@@ -70,88 +78,88 @@
 	<div class="row">
 		<div class="col-12 body-header">
 			<p style="padding-bottom: 5%;">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>
 	</div>
-	
+
 	<div class="row mv">
 		<div class="col-6 mission">
 			<h1>Our Mission</h1>
 			<br>
 			<p style="text-align: left">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>
-		
+
 		<div class="col-6 vision">
 			<h1>Our Vision</h1>
 			<br>
 			<p style="text-align: left">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>
 	</div>
-	
+
 	<br>
 	<br>
-	
+
 	<div class="row">
 		<div class="col-12 services">
 			<h1>OUR SERVICES</h1>
 		</div>
 	</div>
-	
+
 	<div class="row" id="services-container">
 		<div class="col-3 services">
 			<div class="card">
 			  <img src="images/services_1.jpg" alt="Avatar" style="width:100%; height: 300px;">
 			  <div class="container">
-				<h2><b>Security Guard Provider</b></h2> 
+				<h2><b>Security Guard Provider</b></h2>
 			  </div>
 			</div>
 		</div>
-		
+
 		<div class="col-3 services">
 			<div class="card">
 			  <img src="images/services_1.jpg" alt="Avatar" style="width:100%; height: 300px;">
 			  <div class="container">
-				<h2><b>Security Guard Provider</b></h2> 
+				<h2><b>Security Guard Provider</b></h2>
 			  </div>
 			</div>
 		</div>
-		
+
 		<div class="col-3 services">
 			<div class="card">
 			  <img src="images/services_1.jpg" alt="Avatar" style="width:100%; height: 300px;">
 			  <div class="container">
-				<h2><b>Security Guard Provider</b></h2> 
+				<h2><b>Security Guard Provider</b></h2>
 			  </div>
 			</div>
 		</div>
-		
+
 		<div class="col-3 services">
 			<div class="card">
 			  <img src="images/services_1.jpg" alt="Avatar" style="width:100%; height: 300px;">
 			  <div class="container">
-				<h2><b>Security Guard Provider</b></h2> 
+				<h2><b>Security Guard Provider</b></h2>
 			  </div>
 			</div>
 		</div>
 	</div>
-	
+
 	<br>
 	<br>
-	
+
 	<div class="row">
 		<div id="business" class="col-12 business">
 			<h1>COMPANY PROFILE</h1>
@@ -163,19 +171,19 @@
 		<div class="col-6 business-info">
 			<h1>Operating Hours</h1>
 			<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>
-		
+
 		<div class="col-6 business-info">
 			<h1>Location</h1>
 			<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 			Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>
@@ -195,7 +203,7 @@
 					<input type="text" name="firstname">
 				</label>
 				<br>
-				
+
 				<label>
 					<b>E-mail</b>
 					<input type="email" name="email">
@@ -210,28 +218,28 @@
 				<input type="submit">
 			</form>
 		</div>
-		
+
 		<div class="col-6 contact-info">
 			<label>
 				<img src="images/location.png" /><br><b>Somewhere, Philippines</b>
 			</label>
-			
+
 			<label>
 				<img src="images/call.png" /><br><b>123-456-789</b>
 			</label>
-			
+
 			<label>
 				<img src="images/email.png" /><br><b>example@example.com</b>
-			</label>	
+			</label>
 		</div>
 	</div>
-	
-	<div class="row footer-container">	
+
+	<div class="row footer-container">
 		<div class="col-12 footer">
 			<p style="color: White">Up East Agency © Copyright 2016. All Rights Reserved </p>
 		</div>
 	</div>
-	
+
 	<!-- Button to scroll down automatically -->
 	<script>
 		$("#services").click(function() {
@@ -239,28 +247,28 @@
 				scrollTop: $("#services-container").offset().top
 			}, 2000);
 		});
-		
+
 		$("#home").click(function() {
 			$('html, body').animate({
 				scrollTop: $("#slideshow-container").offset().top
 			}, 2000);
 		});
-		
+
 		$("#business_profile").click(function() {
 			$('html, body').animate({
 				scrollTop: $("#business").offset().top
 			}, 2000);
 		});
-		
+
 		$("#contact_us").click(function() {
 			$('html, body').animate({
 				scrollTop: $("#contact").offset().top
 			}, 2000);
 		});
-		
-		
+
+
 	</script>
-	
+
 </body>
 
 </html>
